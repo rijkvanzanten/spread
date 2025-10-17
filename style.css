@@ -5,14 +5,33 @@
 	font-size: 125%;
 }
 
+@media (width > 600px) {
+	:root {
+		font-size: 150%;
+	}
+}
+
 body {
 	padding: var(--spacing);
 }
 
 h1 {
 	font-size: 2rem;
+
+	@media (width > 800px) {
+		font-size: 4rem;
+	}
+
+	@media (width > 1000px) {
+		font-size: 8rem;
+		line-height: 80%;
+	}
 }
 
 p {
 	margin-block-start: calc(2 * var(--spacing));
+}
+
+.some-specific-thing {
+	color: whatever;
 }
