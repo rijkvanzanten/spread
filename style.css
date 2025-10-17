@@ -1,5 +1,7 @@
 :root {
 	--spacing: 1rem;
+	--color-bg: black;
+	--color-fg: white;
 
 	font-family: 'Helvetica', sans-serif;
 	font-size: 125%;
@@ -15,6 +17,19 @@
 
 body {
 	padding: var(--spacing);
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+}
+
+@media print {
+	:root {
+		--color-bg: white;
+		--color-fg: black;
+	}
+
+	body {
+		padding: 3in;
+	}
 }
 
 h1 {
